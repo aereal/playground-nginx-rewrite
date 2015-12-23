@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -e -u
+
+export PROJECT_ROOT="$PWD"
+export PERL_CARTON_PATH="$PWD/local"
+export PERL5LIB="$PERL_CARTON_PATH/lib/perl5"
+
+perl up.pl
